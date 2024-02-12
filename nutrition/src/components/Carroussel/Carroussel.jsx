@@ -1,6 +1,6 @@
-import carrousselFruitBowl from '../../assets/carroussel-fruit-bowl.jpg'
-import carrousselFruits from '../../assets/carroussel-fruits.jpg'
-import carrousselSandwich from '../../assets/carroussel-sandwich.jpg'
+import carrousselFruitBowl from '../../assets/carroussel-fruit-bowl.webp'
+import carrousselFruits from '../../assets/carroussel-fruits.webp'
+import carrousselSandwich from '../../assets/carroussel-sandwich.webp'
 
 import './carroussel.css'
 

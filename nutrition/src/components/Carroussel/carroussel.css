@@ -3,7 +3,8 @@
 }
 
 .wrapper {
-    display: block;
+    display: flex;
+    flex-direction: row;
     width: 100%;
     position: absolute;
     overflow: hidden;
@@ -12,4 +13,5 @@
 img {
     width: 100%;
     position: relative;
+    height: 400px;
 }
