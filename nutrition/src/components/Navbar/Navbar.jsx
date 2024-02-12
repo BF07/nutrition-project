@@ -1,7 +1,10 @@
-import { useState } from 'react'
+// Import CSS style
 import './navbar.css'
-
+// Import image
 import logo from '../../assets/logo_SC.png'
+
+import { useState } from 'react'
+
 
 export default function Navbar () {
 
@@ -62,7 +65,7 @@ export default function Navbar () {
                     <a href="">Contact</a>
                 </div>
 
-                <img src={logo} alt="logo-SandrineCoupart" />
+                <img className='logo' src={logo} alt="logo-SandrineCoupart" />
 
                 <div className="connexion">
                     <div className="dot dot1"></div>
