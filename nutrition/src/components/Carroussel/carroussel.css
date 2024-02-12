@@ -1,0 +1,15 @@
+.carroussel-container {
+    width: 100%;
+}
+
+.wrapper {
+    display: block;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    position: relative;
+}
