@@ -42,12 +42,16 @@ export default function Carroussel() {
     };
     
     return (
-        <div className="carroussel-container">
+        <div className="carrousel-container">
             <div className="wrapper">
                 <FontAwesomeIcon className="left-arrow" icon={faArrowAltCircleLeft} onClick={() => toggleImage('left')} />
+                <div className="carrousel-text">
+                    <h1 className='carrousel-title'>Nutrition & Santé</h1>
+                    <button className='info-btn'>S'informer</button>
+                </div>
                 <div className="carrousel-images" style={{ transform: `translateX(${transformValue}%)` }}>
                     {images.map((img, index) => (
-                        <img key={index} className={`carroussel-img ${index === image ? 'active' : ''}`} src={img} alt="" />
+                        <img key={index} className={`carrousel-img ${index === image ? 'active' : ''}`} src={img} alt="" />
                     ))}
                 </div>
                 <FontAwesomeIcon className="right-arrow" icon={faArrowAltCircleRight} onClick={() => toggleImage('right')} />
