@@ -23,9 +23,12 @@ export default function Navbar () {
                 position: 'absolute',
                 top: '60px',
                 left: '0',
+                zIndex: '100',
                 backgroundColor: '#ffffff',
                 width: '320px',
-                borderBottomRadius: '20%'
+                borderBottomLeftRadius: '20%',
+                borderBottomRightRadius: '20%',
+                paddingBottom: '20px'
             }
         }
         return {
@@ -40,7 +43,9 @@ export default function Navbar () {
             left: '-100%',
             backgroundColor: '#ffffff',
             width: '320px',
-            borderBottomRadius: '20%'
+            borderBottomLeftRadius: '20%',
+            borderBottomRightRadius: '20%',
+            paddingBottom: '20px'
         }
     }
 
