@@ -82,10 +82,6 @@ a {
         gap: 30px;
     }
 
-    .logo {
-        width: 46vw;
-    }
-
     .navbar-contact {
         display: flex;
         flex-direction: column;
