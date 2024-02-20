@@ -3,6 +3,10 @@ import './navbar.css'
 
 import logo from '../../assets/logo_SC.png'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone, faUser } from '@fortawesome/free-solid-svg-icons'
+
+
 export default function Navbar () {
 
     const [burger, setBurger] = useState('');
@@ -49,32 +53,72 @@ export default function Navbar () {
         }
     }
 
-    return <>
+    return (
+      <>
         <header>
-            <nav className="navbar">
-                <div className="hamburger-icon" onClick={toggleBurger}>
-                    <div className="line line1"></div>
-                    <div className="line line2"></div>
-                    <div className="line line3"></div>
-                </div>
-                <div style={sideBarStyle()}>
-                    <a href="">Accueil</a>
-                    <a href="">À Propos</a>
-                    <a href="">Mes Recettes Minceurs</a>
-                    <a href="">Mes Plans Sportifs</a>
-                    <a href="">Mon Calendrier</a>
-                    <a href="">Ateliers de Prévention et d'Information</a>
-                    <a href="">Contact</a>
-                </div>
+          <nav className="navbar-mobile">
+            <div className="hamburger-icon" onClick={toggleBurger}>
+              <div className="line line1"></div>
+              <div className="line line2"></div>
+              <div className="line line3"></div>
+            </div>
+            <div style={sideBarStyle()}>
+              <a href="">Accueil</a>
+              <a href="">À Propos</a>
+              <a href="">Mes Recettes Minceurs</a>
+              <a href="">Mes Plans Sportifs</a>
+              <a href="">Mon Calendrier</a>
+              <a href="">Ateliers de Prévention et d'Information</a>
+              <a href="">Contact</a>
+            </div>
 
-                <img src={logo} alt="logo-SandrineCoupart" />
+            <img className="logo" src={logo} alt="logo-SandrineCoupart" />
 
-                <div className="connexion">
-                    <div className="dot dot1"></div>
-                    <div className="dot dot2"></div>
-                    <div className="dot dot3"></div>
+            <div className="connexion">
+              <div className="dot dot1"></div>
+              <div className="dot dot2"></div>
+              <div className="dot dot3"></div>
+            </div>
+          </nav>
+          <nav className="desktop">
+            <div className="navbar-desktop">
+              <img className="logo" src={logo} alt="SandrineCoupart" />
+
+              <div className="navbar-contact">
+                <p className="adress">
+                  <span>
+                    Cabinet Sandrine Coupart - Diététicienne / Nutritionniste
+                  </span>
+                  <br />
+                  28 Rue Joseph Pasteur, 97400 Saint-Denis
+                </p>
+                <div className="phone">
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    style={{ color: "#f8b4b4", paddingRight: "5px" }}
+                  />
+                  <p>06 06 06 06 06</p>
                 </div>
-            </nav>
+                <button className="rdv-button">
+                  Prendre rendez-vous en ligne
+                </button>
+              </div>
+              <FontAwesomeIcon icon={faUser} style={{ color: "#f8b4b4" }} />
+            </div>
+            <div className="border">
+              <div className="border-line"></div>
+            </div>
+            <div className="nav-items">
+              <a href="">Accueil</a>
+              <a href="">À Propos</a>
+              <a href="">Mes Recettes Minceurs</a>
+              <a href="">Mes Plans Sportifs</a>
+              <a href="">Mon Calendrier</a>
+              <a href="">Ateliers de Prévention et d'Information</a>
+              <a href="">Contact</a>
+            </div>
+          </nav>
         </header>
-    </>
+      </>
+    );
 }

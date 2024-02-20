@@ -1,4 +1,4 @@
-.navbar {
+.navbar-mobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,6 +6,10 @@
     padding: 10px 20px;
     -webkit-box-shadow: 0px 5px 15px 0px #000000; 
     box-shadow: 0px 5px 15px 0px #000000;
+}
+
+.desktop {
+    display: none;
 }
 
 .hamburger-icon {
@@ -18,7 +22,7 @@
     position: absolute;
     display: block;
     height: 2px;
-    background: #f8b4b4;
+    background: rgb(248, 180, 180);
     width: 30px;
 }
 
@@ -35,7 +39,7 @@ a {
     color: #000000;
 }
 
-img {
+.logo {
     width: 22vw;
 }
 
@@ -60,4 +64,97 @@ img {
 
 .dot3 {
     transform: translateY(16px);
+}
+
+@media screen and (min-width: 778px) {
+    .navbar-mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+
+    .navbar-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 100px;
+        gap: 30px;
+    }
+
+    .logo {
+        width: 46vw;
+    }
+
+    .navbar-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .adress {
+        font-family: 'Poppins',sans-serif;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .adress span {
+        font-weight: bold;
+    }
+
+    .phone {
+        display: flex;
+        align-items: center;
+        color: #f8b4b4;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .rdv-button {
+        background-color: #0596DE;
+        color: #FFFFFF;
+        border: transparent;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        padding: 10px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .border {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .border-line {
+        border-bottom: 1px solid #f8b4b4;
+        width: 100vw;
+        margin: 10px 100px;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 35px;
+        padding: 30px 100px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8vw;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+
+    .nav-items a {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-items a:hover {
+        color: #f8b4b4;
+        font-weight: bold;
+    }
 }
