@@ -103,7 +103,7 @@ export default function Navbar () {
                   Prendre rendez-vous en ligne
                 </button>
               </div>
-              <FontAwesomeIcon icon={faUser} style={{ color: "#f8b4b4" }} />
+              <FontAwesomeIcon className='user-icon' icon={faUser} style={{ color: "#f8b4b4" }} />
             </div>
             <div className="border">
               <div className="border-line"></div>
