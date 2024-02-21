@@ -1,0 +1,112 @@
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 60px;
+    background-color: #f8f8f8;
+}
+
+.title-cards-section {
+    text-align: center;
+    font-family: 'Kaushan script', cursive;
+    color: #464646;
+    font-size: 3vw;
+}
+
+.paragraph-cards-section {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2.5vw;
+    text-align: center;
+    color: #464646;
+    padding-top: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 30px 0px 30px;
+}
+
+.title-card a {
+    font-size: 3.5vw;
+    color: #f8b4b4;
+    font-weight: bold;
+}
+
+.text-card {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.text-card span {
+    color: #f8b4b4;
+}
+
+.card-more {
+    color: #f8b4b4;
+    cursor: pointer;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 510px) {
+    .cards-section {
+        padding: 40px 120px;
+    }
+}
+
+@media screen and (min-width: 778px) {
+    .cards-section {
+        padding: 40px;
+    }
+
+    .title-cards-section {
+        font-size: 2vw;
+        padding-left: 220px;
+        padding-right: 220px;
+    }
+
+    .paragraph-cards-section {
+        font-size: 1.5vw;
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px;
+        gap: 30px;
+    }
+
+    .card {
+        min-height: 250px;
+        height: 100%;
+    }
+
+    .title-card a {
+        font-size: 2vw;
+    }
+
+    .text-card {
+        font-size: 1.5vw;
+    }
+
+    .card-more {
+        font-size: 3vw;
+    }
+}
+
+
